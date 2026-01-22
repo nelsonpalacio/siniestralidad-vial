@@ -1,0 +1,68 @@
+# ===========================
+# Entorno virtual
+# ===========================
+venv/
+.env
+
+# ===========================
+# Archivos de Python compilados
+# ===========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===========================
+# Logs
+# ===========================
+*.log
+
+# ===========================
+# Datos locales / archivos grandes
+# ===========================
+datos/*.csv
+datos/*.parquet
+
+# ===========================
+# Configuración local
+# ===========================
+*.sqlite3
+*.db
+*.sqlite
+
+# ===========================
+# Archivos de sistema / OS
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Cachés de IDE / editores
+# ===========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# Archivos temporales
+# ===========================
+*.tmp
+*.bak
+*.swp
+
+# ===========================
+# Node / Frontend (si tienes algún build)
+# ===========================
+node_modules/
+dist/
+build/
+# Datos pesados
+datos/*.csv
+datos/*.parquet
+
+# Python
+__pycache__/
+*.pyc
+venv/
