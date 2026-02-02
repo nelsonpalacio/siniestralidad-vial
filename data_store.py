@@ -26,7 +26,11 @@ print("📂 Cargando CSV desde:", CSV_PATH)
 # ===============================
 # CARGA CSV (UNA SOLA VEZ)
 # ===============================
-df = pd.read_csv(CSV_PATH, low_memory=False)
+df = pd.read_csv(CSV_PATH, sep=";", encoding="latin-1", low_memory=False)
+
+
+
+
 
 # ===============================
 # NORMALIZACIONES
