@@ -20,7 +20,7 @@ __pycache__/
 # ===========================
 # Datos locales / archivos grandes
 # ===========================
-datos/*.csv
+#datos/*.csv
 datos/*.parquet
 
 # ===========================
