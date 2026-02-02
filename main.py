@@ -14,16 +14,23 @@ app.add_middleware(
 def root():
     return {"status": "backend OK"}
 
-# DATA
+# ===============================
+# DATA (SE CARGA UNA SOLA VEZ)
+# ===============================
 from data_store import DF_VIGENTE, ANIO_ACTUAL
 
 print(f"📊 Registros vigentes cargados: {DF_VIGENTE.shape[0]}")
 print(f"📅 Año más reciente: {ANIO_ACTUAL}")
 
+# ===============================
 # ROUTERS
+# ===============================
 from consultas_fijas import router as router_fijas
 app.include_router(router_fijas, prefix="/consulta", tags=["Consultas Fijas"])
 
+# ===============================
+# HEALTHCHECK
+# ===============================
 @app.get("/health")
 def health():
     return {
